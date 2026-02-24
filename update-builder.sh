@@ -7,7 +7,7 @@ REPO_URL="https://github.com/astro/nix-openwrt-imagebuilder"
 
 if [ ! -d "$REPO_DIR" ]; then
     echo "Cloning $REPO_URL..."
-    git clone "$REPO_URL" "$REPO_DIR"
+    git clone --depth 1 "$REPO_URL" "$REPO_DIR"
 fi
 
 pushd "$REPO_DIR" > /dev/null

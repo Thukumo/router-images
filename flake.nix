@@ -25,17 +25,19 @@
       routerConfigs = {
         main-router = {
           packages = [
+            # Eth driver
             "kmod-usb-net-rtl8152"
             "kmod-usb-net-rndis"
-            "kmod-tg3"
-            "kmod-r8168"
-            "kmod-r8169"
+            "kmod-tg3" # x4
+            "kmod-r8168" # x1
+            "kmod-r8125" # オンボード
 
             "luci"
             "luci-i18n-base-ja"
 
             "mwan3"
             "luci-app-mwan3"
+            "luci-i18n-mwan3-ja"
           ];
         };
         sub-router = {

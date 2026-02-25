@@ -7,7 +7,7 @@
 
 ## 動作要件
 
-- OS: Linux環境(WSL可)
+- OS: [nix-systems/default](https://github.com/nix-systems/default)に従う(MacOS, WSL含むLinux)
 - Nix: flakes, nix-commandが有効化されていること
 
 Nixの導入が済んでいない場合、[こちら](https://docs.determinate.systems/determinate-nix/)を参考に導入してください。
